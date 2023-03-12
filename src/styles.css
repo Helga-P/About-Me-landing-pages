@@ -4,12 +4,15 @@
 --page-font: 'Inter', sans-serif;
 --regular-text-size: 16px;
 --classic-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 51.1542px 51.419px rgba(0, 0, 0, 0.0182814), 0px 31.2614px 32.7222px rgba(0, 0, 0, 0.0145485), 0px 19.7px 20.341px rgba(0, 0, 0, 0.0131802), 0px 12.1574px 11.8781px rgba(0, 0, 0, 0.012699), 0px 6.89112px 6.09643px rgba(0, 0, 0, 0.0121579), 0px 3.01109px 2.28593px rgba(0, 0, 0, 0.0102347);
+--icon-gradient: linear-gradient(90deg, #9ED2FF 0%, #FDA9E7 101.17%),
+    #C4C4C4;
 }
 
 .card {
 height: 699px;
 width: 468px;
 display: flex;
+flex-direction: column;
 border-radius: 32px;
 background: #ffff;
 margin: 40px 0 40px 0;
@@ -30,11 +33,9 @@ padding: 0;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 0px 32px;
 width: 468px;
 height: 259px;
 border-radius: 34px 34px 0 0;
-
 background: conic-gradient(from 172.44deg at 107.61% 54.63%, rgba(254, 170, 228, 0) 0deg, #F6DFD8 18.03deg, rgba(254, 170, 229, 0) 104.03deg, rgba(254, 170, 228, 0) 360deg), radial-gradient(38.17% 86.77% at 10.46% 79.54%, #FFEEC3 0%, rgba(255, 238, 195, 0) 100%)
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
         , radial-gradient(61.14% 73.94% at 44.57% -39.19%, #9ED2FF 0%, rgba(158, 210, 255, 0) 100%)
@@ -121,7 +122,7 @@ align-items: center;
 }
 
 .card-content-box{
-    width: 368px;
+    width: 468px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -167,9 +168,75 @@ h3 {
     border: 1px solid #FFFFFF;
 }
 
-.bio-content {
+.bio-body {
+    height: 440px;
+    width: 468px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bio-content {
+    padding-top: 32px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 304px;
+    height: 221px;
+}
+
+body {
+    margin: 0;
+}
+
+.bio-story {
+    padding-top: 8px;
+}
+
+.gg-mail, 
+.gg-instagram, 
+.gg-twitter {
+color: #FDA9E7;
+width: 20px;
+height: 20px
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: var(--page-font);
+    font-size: var(--regular-text-size);
+    color: var(--regular-text-color);
+    height: 440px;
+    width: 468px;
+    justify-content: flex-start;
+    padding: 32px 0 0 80px;
+}
+.contact-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+
+.contact-link :hover {
+color: #9ED2FF;
+text-decoration: underline;
+}
+
+.contact-link :visited, .contact-link {
+text-decoration: none;
+color: var(--regular-text-color);
+padding-right: 8px;
+}
+
+.email, .twitter, .instagram {
+    display: flex;
+   padding-top: 8px;
 }
