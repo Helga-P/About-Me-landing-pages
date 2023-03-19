@@ -43,7 +43,7 @@ background: conic-gradient(from 172.44deg at 107.61% 54.63%, rgba(254, 170, 228,
 
 .avatar{
     margin-bottom: 12px;
-    text-align: center;
+    border-radius: 30px;
 }
 
 h1 {
@@ -93,7 +93,7 @@ background-color: #FFFFFF;
 .card-content-box{
     list-style: none;
     margin: 0;
-    padding: 32px 0 0 0;
+    padding: 0;
 }
 .first-fact, 
 .second-fact,
@@ -102,7 +102,7 @@ background-color: #FFFFFF;
 align-items: flex-start;
 }
 
-.fact-content, .bio-story {
+.fact-content, .bio-story, .contact-message {
     padding: 0;
     margin: 0;
     font-family: var(--page-font);
@@ -130,7 +130,6 @@ h3 {
 }
 
 .bio-content {
-    padding-top: 32px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -142,7 +141,6 @@ body {
 }
 
 .bio-story {
-    padding-top: 8px;
 }
 
 .gg-mail, 
@@ -155,10 +153,8 @@ height: 20px
 
 .contact-content {
     font-family: var(--page-font);
-    font-size: var(--regular-text-size);
-    color: var(--regular-text-color);
-    justify-content: flex-start;
-    padding: 32px 0 0 80px;
+    padding: 24px;
+
 }
 .contact-list{
     list-style: none;
@@ -188,4 +184,9 @@ padding-right: 8px;
 
 ul {
     text-decoration: none;
+}
+
+.card-content {
+    height: 480px;
+    width: 412px;
 }

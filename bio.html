@@ -14,29 +14,48 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Bio</title>
-  </head>
   <body>
-     <div class="body object-fit-fill">
-      <div class="card h-75 w-50 p-3">
-        <div class="card-header">
-          <div class="main-info">
-            <img class="avatar" src="img/Helga.jpeg" alt="Helga Prydyus" />
-            <h1>Helga Prydyus</h1>
-            <p class="profession">Front-end Engineer</p>
-          </div class="nav-bar">
-          <ul class="nav-list">
-          <li class="tab-about"><a href="main.html" class="about-a">About</a></li>
-          <li class="tab-bio active"><a href="bio.html" class="bio-a">Bio</a></li>
-          <li class="tab-contact"><a href="contacts.html" class="contact-a">Contact</a></li>
-          </ul>
-        </div>
-        <div class="bio-body">
-          <div class="bio-content">
-            <h3>My story</h3>
-            <p class="bio-story">Hi there 👋 <br>
+    <div class="body d-flex flex-column align-items-center justify-content-center">
+    <div class="card col-md-6 flex-column justify-content-center align-content-center">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Hi 👋</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav">
+        <li class="nav-item px-2">
+          <a class="nav-link rounded-4" aria-current="page" href="main.html">About me</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link active rounded-4" href="bio.html">Experience</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link rounded-4" href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+      
+    </div>
+    </div>
+</nav>
+
+        <div class="card-header container-fluid p-0">
+          <div class="main-info row justify-content-center align-content-center text-center">
+            <img class="avatar col-6 col-md-4 rounded-8" src="img/Helga.jpeg" alt="Helga Prydyus" />
+            <h1 class="name  col-md-12">Helga Prydyus</h1>
+            <p class=" profession col-md-12">Front-end Engineer</p>
+            </div>
+
+        <div class="card-content container justify-content-center">
+          <ul class="card-content-box row justify-content-center p-lg-4">
+            <h3 class="col-12">My story</h3>
+            <p class="bio-story col-12">Hi there 👋 <br>
               <br> My name is Helga, and I'm a Junior front-end Engineer. 
               Currently based in London. Originally from Ukraine 🇺🇦 <br> 
-               <br> I've always had a passion for all things tech-related, and I've honed my skills in front-end development to create visually stunning and user-friendly interfaces. </p>
+               <br> I've always had a passion for all things tech-related. <br> I've honed my skills in front-end development to create visually stunning and user-friendly interfaces. </p>
           </div>
           </div>
       </div>
