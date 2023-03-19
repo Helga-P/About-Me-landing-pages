@@ -51,6 +51,7 @@ h1 {
     color: var(--title-color);
     font-family: var(--page-font);
     font-size: 24px;
+    padding-top: 8px;
 }
 
 .profession {
@@ -179,7 +180,7 @@ padding-right: 8px;
 
 .email, .twitter, .instagram {
     display: flex;
-   padding-top: 8px;
+   padding-top: 6px;
 }
 
 ul {
