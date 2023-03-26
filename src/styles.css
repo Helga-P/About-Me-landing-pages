@@ -19,10 +19,10 @@ body {
 }
 
 .card {
-border-radius: 32px;
 background: #ffff;
 box-shadow: var(--classic-shadow);
 font-family: var(--page-font);
+border-radius: 12px;
 }
 
 .body {  
@@ -32,7 +32,6 @@ padding: 0;
 }
 
 .card-header{
-border-radius: 0;
 background: conic-gradient(from 172.44deg at 107.61% 54.63%, rgba(254, 170, 228, 0) 0deg, #F6DFD8 18.03deg, rgba(254, 170, 229, 0) 104.03deg, rgba(254, 170, 228, 0) 360deg), radial-gradient(38.17% 86.77% at 10.46% 79.54%, #FFEEC3 0%, rgba(255, 238, 195, 0) 100%)
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
         , radial-gradient(61.14% 73.94% at 44.57% -39.19%, #9ED2FF 0%, rgba(158, 210, 255, 0) 100%)
@@ -94,6 +93,7 @@ border-radius: 8px 8px 0px 0px;
 margin: 0;
 padding: 0;
 background-color: #FFFFFF;
+border-radius: 20px;
 }
 
 .card-content-box{
@@ -146,8 +146,7 @@ body {
     margin: 0;
 }
 
-.bio-story {
-}
+
 
 .gg-mail, 
 .gg-instagram, 
@@ -192,10 +191,6 @@ ul {
     text-decoration: none;
 }
 
-.card-content {
-    /* height: 480px;
-    width: 412px; */
-}
 .portfolio {
 border: 5px solid red;
 }
@@ -205,15 +200,40 @@ border: 5px solid red;
 }
 
 @media (max-width: 576px) {
-   p {
+    .contact-link,
+    p {
     font-size: 10px;
      }
-     
+    
      .profession {
         font-size: 12px;
      }
 
     .name {
-        font-size: 16px;
+        font-size: 18px;
      }
+
+        .facts-title,
+        .bio-title {
+        font-size: 14px;
+     }
+
+    .bio-title {
+        margin-top: 12px;
+    }
+
+    .contacts-title,
+    .card-title {
+    font-size: 14px;
+    }
+
+        .card-content-box {
+            padding: 24px;
+        }
+
+        .gg-mail,
+        .gg-instagram,
+        .gg-twitter {
+          max-width: 10%;
+        }
 }
