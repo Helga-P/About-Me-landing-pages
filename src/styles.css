@@ -199,7 +199,7 @@ border: 5px solid red;
    color: var(--regular-text-color);
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .contact-link,
     p {
     font-size: 10px;
@@ -229,11 +229,5 @@ border: 5px solid red;
 
         .card-content-box {
             padding: 24px;
-        }
-
-        .gg-mail,
-        .gg-instagram,
-        .gg-twitter {
-          max-width: 10%;
         }
 }
